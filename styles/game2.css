@@ -1,0 +1,66 @@
+body {
+	margin : 0;
+	font-size: 14px;
+}
+#container {
+	margin : 10px 0 0 100px;
+	width : 450px;
+	height : 560px;
+}
+#map {
+	float : left;
+	width : 280px;
+	height : 560px;
+	border : solid 2px green;
+	position: relative;
+	overflow: hidden;
+}
+#rightpanel {
+	float : left;
+	width : 140px;
+	height : 560px;
+	margin : 0 0 0 20px;
+}
+#nextmap {
+	width : 140px;
+	height : 140px;
+	border : solid 2px green;
+	position: relative;
+	margin-top: 15px;
+}
+#scorepanel {
+	margin : 10px 0 0 0;
+	width : 140px;
+}
+#scorepanel span {
+	display: block;
+	float : left;
+	width : 50px;
+	text-align: center;
+}
+#scorepanel .score {
+	background-color: #99ccff;
+}
+#output {
+	width : 181px;
+	height : 200px;
+	border : solid 2px green;
+	margin: 10px 0 0 0;
+	padding: 5px;
+}
+#map .overdiv {
+	left : 0;
+	top : 0;
+	width : 280px;
+	height : 560px;
+	position: absolute;
+	background-color: pink;
+	z-index : 5;
+	opacity : 0.8;
+	filter : progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=80,finishOpacity=100);
+	text-align : center;
+	font-weight : 800;
+    font-size : xx-large;
+    color : red;
+	line-height : 420px;
+}

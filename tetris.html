@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jQuery Tetris</title>
+<link rel="stylesheet" type="text/css" href="styles/game2.css"/>
+<style type="text/css">
+#map .backgroundbox {
+	background : url(images/tetris_grid.gif) no-repeat scroll 0 0 transparent;
+	width : 28px;
+	height : 28px;
+	position:absolute;
+}
+#map .box0,#nextmap .box0 {
+	background : url(images/tetris.gif) no-repeat scroll 0 0 transparent;
+	width : 28px;
+	height : 28px;
+	position:absolute;
+}
+#map .box1,#nextmap .box1 {
+	background : url(images/tetris.gif) no-repeat scroll -28px 0 transparent;
+	width : 28px;
+	height : 28px;
+	position:absolute;
+}
+#map .box2,#nextmap .box2 {
+	background : url(images/tetris.gif) no-repeat scroll -56px 0 transparent;
+	width : 28px;
+	height : 28px;
+	position:absolute;
+}
+#map .box3,#nextmap .box3 {
+	background : url(images/tetris.gif) no-repeat scroll -84px 0 transparent;
+	width : 28px;
+	height : 28px;
+	position:absolute;
+}
+#map .box4,#nextmap .box4 {
+	background : url(images/tetris.gif) no-repeat scroll -112px 0 transparent;
+	width : 28px;
+	height : 28px;
+	position:absolute;
+}
+#map .box5,#nextmap .box5 {
+	background : url(images/tetris.gif) no-repeat scroll -140px 0 transparent;
+	width : 28px;
+	height : 28px;
+	position:absolute;
+}
+#map .box6,#nextmap .box6 {
+	background : url(images/tetris.gif) no-repeat scroll -168px 0 transparent;
+	width : 28px;
+	height : 28px;
+	position:absolute;
+}
+</style>
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/game2.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="map"></div>
+		<div id="rightpanel">
+			<div id="nextmap"></div>
+			<div id="scorepanel">
+				<span>score:</span>
+				<span class="score">0</span>
+			</div>
+			<div id="controlpanel">
+				<button style="margin-top: 10px;">Start</button>			
+			</div>
+			<div id="output">
+				<font color="red">
+				Note：<br/>
+				Arrow up : Rotation<br/>
+				Arrow left : move left<br/>
+				Arrow right : move right<br/>
+				Arrow down : move down.
+				</font>
+				<p/>
+				<font color="green"></font>
+				<p/>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
